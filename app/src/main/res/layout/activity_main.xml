@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.finne.golfgame.MainActivity">
+
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        >
+
+        <Button
+            android:text="Driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/driver"
+            android:onClick="buttonTapped"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:layout_gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            />
+
+        <Button
+            android:text="3-Wood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wood_3"
+            android:onClick="buttonTapped"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:layout_gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            />
+
+        <Button
+            android:text="5-iron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iron5"
+            android:onClick="buttonTapped"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:layout_gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            />
+
+        <Button
+        android:text="7-iron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iron7"
+        android:onClick="buttonTapped"
+        app:layout_column="1"
+        app:layout_row="1"
+        app:layout_gravity="fill"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        />
+
+        <Button
+            android:text="9-iron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iron9"
+            android:onClick="buttonTapped"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:layout_gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            />
+
+        <Button
+            android:text="PW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pw"
+            android:onClick="buttonTapped"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:layout_gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            />
+
+        <Button
+            android:text="LW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lw"
+            android:onClick="buttonTapped"
+            app:layout_column="0"
+            app:layout_row="3"
+            app:layout_gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            />
+
+        <Button
+            android:text="putter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/putter"
+            android:onClick="buttonTapped"
+            app:layout_column="1"
+            app:layout_row="3"
+            app:layout_gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            />
+
+    </android.support.v7.widget.GridLayout>
+
+    <ImageButton
+        app:srcCompat="@drawable/driver"
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="buttonTapped"/>
+
+</RelativeLayout>
